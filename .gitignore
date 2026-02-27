@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+*.so
+*.whl
+.venv/
+venv/
+env/
+.env
+.env.*
+pip-log.txt
+pip-delete-this-directory.txt
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+*.cover
+*.log
+.tox/
+.nox/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+*.iml
+.idea/
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+hs_err_pid*
+jacoco.exec
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data
+*.csv
+*.json
+!tests/fixtures/*.java
+!tests/fixtures/*.json
+
+# Coverage
+coverage/

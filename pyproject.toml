@@ -1,0 +1,30 @@
+[project]
+name = "synthetic-data"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "tree-sitter",
+    "tree-sitter-java",
+    "z3-solver",
+    "sqlglot",
+    "requests",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+]
+
+[project.scripts]
+synthetic-data = "synthetic_data.cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
